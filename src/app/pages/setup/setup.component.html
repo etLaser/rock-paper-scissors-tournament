@@ -1,0 +1,9 @@
+<h1 class="header">Welcome</h1>
+<div class="lists-container">
+  <rpst-player-list [players]="players" (playerClicked)="onPlayerClicked($event)"></rpst-player-list>
+  <rpst-player-list [players]="roster" (playerClicked)="onRosterClicked($event)" placement="left"></rpst-player-list>
+</div>
+
+<div class="button-container">
+  <button class="start-button" (click)="onStartClicked()">Start</button>
+</div>

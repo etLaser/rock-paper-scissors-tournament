@@ -1,0 +1,25 @@
+.list {
+  list-style-type: none;
+  margin: 15px;
+  border: 1px blue solid;
+  height: 50vh;
+  padding-inline-start: unset;
+}
+
+.player-item {
+  border: 1px grey solid;
+}
+.player-item:hover {
+  background-color: darkgrey;
+}
+
+.player-name { 
+  font-weight: 900; 
+}
+.player-description { 
+  font-weight: 200; 
+  font-size: .8em;
+}
+.player-name, .player-description {
+  margin: 2px;
+}

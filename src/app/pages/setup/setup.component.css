@@ -1,0 +1,15 @@
+.header { text-align: center; }
+
+.lists-container {
+  margin: 0 25px;
+  border: 1px red solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.button-container { text-align: center; }
+
+.start-button { margin: 15px; }
+
+rpst-player-list { width: 40%; }

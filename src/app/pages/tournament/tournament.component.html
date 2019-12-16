@@ -1,0 +1,17 @@
+<!-- <div>
+  <p>{{ results.length }} matches of {{ totalMatches }} complete.</p>
+</div> -->
+
+<div style="text-align: center;">
+  <div *ngFor="let result of results">
+    <p>{{ result.matches[0].play1.player.name }} vs. {{ result.matches[0].play2.player.name }}</p>
+    <p>{{ result.score.player1Wins }} -------- {{ result.score.draws }} -------- {{ result.score.player2Wins }}</p>
+  </div>
+</div>
+
+<div *ngIf="showResults" style="text-align: center;">
+    <div *ngFor="let wins of playerWins">
+      <p>{{wins.player.name}}: {{wins.wins}}</p>
+    </div>
+    <button (click)="again()">Again!</button>
+</div>

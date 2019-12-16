@@ -1,0 +1,10 @@
+<ul class="list">
+  <li *ngFor="let player of players" 
+  class="player-item" 
+  [tooltip]="player.description" 
+  [placement]="placement"
+  (click)="playerClicked.emit(player)">
+    <p class="player-name">{{ player.name }}</p>
+    <p class="player-description">{{ player.slogan }}</p>
+  </li>
+</ul>
